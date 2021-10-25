@@ -1,0 +1,260 @@
+* {
+  font-size: 100%;
+  font-weight: normal;
+  text-indent: 0em;
+}
+
+.sm-small-caps {
+  font-variant: small-caps;
+}
+
+.sm-bold {
+  font-weight: bold;
+}
+
+.sm-superscript {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.sm-upshape {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sm-italic {
+  font-style: italic;
+}
+
+.sm-caesura {
+  font-style: normal;
+}
+
+.sm-elipsis {
+  font-style: normal;
+}
+
+.sm-notesep {
+  font-style: normal;
+}
+
+.sm-title, sm-ms-title, sm-ed-title {
+  font-style: italic;
+}
+
+.sm-upshape-title {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sm-parnum {
+  margin-left: -1cm;
+  font-weight: bold;
+  text-align: right;
+  cursor: pointer;
+  color: firebrick;
+}
+.sm-parnum:hover {
+  color: #BBCEBE;
+}
+
+.sm-linum {
+  margin-left: 0px;
+  font-weight: normal;
+  text-align: right;
+  cursor: pointer;
+  color: firebrick;
+  vertical-align: super;
+  font-size: smaller;
+}
+.sm-linum:hover {
+  color: #BBCEBE;
+}
+
+.sm-folionum {
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  padding-right: 3px;
+  padding-left: 3px;
+  color: gray;
+}
+
+.sm-note-anchor {
+  color: darkred;
+  vertical-align: super;
+}
+.sm-note-anchor::before {
+  content: "*";
+}
+
+.sm-pbmark {
+  color: goldenrod;
+  font-style: normal;
+}
+
+.sm-pbnum {
+  position: relative;
+  font-style: normal;
+}
+.sm-pbnum:hover::after {
+  font-style: normal;
+  background: gold;
+  border-radius: 4px;
+  bottom: 100%;
+  content: attr(title);
+  display: block;
+  left: 100%;
+  padding: 1ex;
+  position: absolute;
+  width: auto;
+  z-index: 1;
+}
+
+.sm-parnum {
+  padding-right: 15px;
+  margin-left: 0px;
+  position: absolute;
+  left: -30px;
+  text-align: right;
+  cursor: pointer;
+  color: green;
+}
+
+h1:hover .sm-div-info, h2:hover .sm-div-info, h3:hover .sm-div-info, h4:hover .sm-div-info, h5:hover .sm-div-info, h6:hover .sm-div-info {
+  display: inline;
+}
+
+div.linegroup {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  width: auto;
+}
+
+p {
+  margin-top: 0pt;
+  width: 60%;
+  max-width: 800px;
+  text-align: justify;
+  position: relative;
+}
+p.sm-note-hidden {
+  display: none;
+}
+p.sm-note-unhidden {
+  font-size: 80%;
+  width: 60%;
+  background-color: thistle;
+  display: inline;
+}
+p.verse {
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  text-indent: 0em;
+  font-style: italic;
+  text-align: left;
+}
+
+q.sm-foreign {
+  font-style: italic;
+}
+q.sm-lexeme {
+  font-variant: small-caps;
+}
+
+blockquote {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+
+.sm-reg {
+  position: relative;
+  border-bottom: 1px solid red;
+  font-size: 100%;
+}
+.sm-reg:hover::after {
+  font-size: x-small;
+  font-style: normal;
+  font-variant: normal;
+  background: #add8e6;
+  border-radius: 4px;
+  bottom: 100%;
+  content: attr(title) " (reg.)";
+  display: block;
+  left: 100%;
+  padding: 1ex;
+  position: absolute;
+  width: max-content;
+  z-index: 1;
+}
+
+.sm-corr {
+  position: relative;
+  border-bottom: 1px solid green;
+  font-size: 100%;
+}
+.sm-corr:hover::after {
+  font-size: x-small;
+  font-style: normal;
+  font-variant: normal;
+  color: black;
+  background: #78e978;
+  border-radius: 4px;
+  bottom: 100%;
+  content: "(corr.)";
+  display: block;
+  left: 100%;
+  padding: 1ex;
+  position: absolute;
+  width: max-content;
+  z-index: 1;
+}
+
+.sm-sic {
+  position: relative;
+  color: #a71747;
+  margin-left: 0pt;
+  font-size: 80%;
+  font-style: normal;
+  font-variant: normal;
+  vertical-align: -1pt;
+}
+.sm-sic:hover::after {
+  font-size: x-small;
+  color: black;
+  background: #e9a178;
+  border-radius: 4px;
+  bottom: 100%;
+  content: attr(title) " (sic)";
+  display: block;
+  left: 100%;
+  padding: 1ex;
+  position: absolute;
+  width: max-content;
+  z-index: 1;
+}
+
+a.anchor-in-text, a.anchor-in-note {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+  font-style: normal;
+}
+a.anchor-in-text {
+  margin-left: 1pt;
+}
+a.anchor-in-note {
+  margin-right: 2pt;
+}
+
+p.note {
+  display: inline;
+}
+
+div.note {
+  margin-bottom: 1em;
+}
+
+/*# sourceMappingURL=zayas.css.map */
