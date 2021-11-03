@@ -131,11 +131,7 @@ div.linegroup {
 }
 
 p {
-  margin-top: 0pt;
-  width: 60%;
-  max-width: 800px;
-  text-align: justify;
-  position: relative;
+
 }
 p.sm-note-hidden {
   display: none;
@@ -264,5 +260,35 @@ p.note {
 div.note {
   margin-bottom: 1em;
 }
+
+.column {
+  float: center;
+  width: 45%;
+  padding: 5px;
+  text-align:right;
+  
+}
+.column1 {
+  float: center;
+  width: 45%;
+  padding: 5px;
+  text-align:left;
+  
+}
+.column2 {
+  float: center;
+  width: 10%;
+  padding: 5px;
+  text-align:left;
+  
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 /*# sourceMappingURL=zayas.css.map */
