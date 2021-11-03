@@ -1,0 +1,51 @@
+@import "navbar.css";
+@font-face { 
+    font-family: sunday;             
+    src: url('/resources/fonts/Sunday-Regular.otf');  
+}
+@font-face { 
+    font-family: opensauce;             
+    src: url('/resources/fonts/OpenSauceSans-Regular.ttf');  
+}
+
+
+* {
+    font-size: 100%;
+    font-weight: normal;
+    text-indent: 0em;
+  }
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    
+    margin: auto;
+}
+
+body{
+    background-color: #fffbef;
+    font-family: sunday;
+    
+}
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color:#f68172;
+    text-shadow: #f68171;
+  }
+.intro{
+margin-top: 0pt;
+
+text-align: justify;
+position: relative;
+font-family: opensauce;
+font-size: 25px;
+color:#4f1f15;
+line-height: 1.4;
+
+}
+
+  
