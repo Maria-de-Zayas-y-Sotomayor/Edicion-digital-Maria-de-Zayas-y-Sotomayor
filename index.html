@@ -25,20 +25,20 @@
 
 <body>
   <!--NAVBAR-->
-  <ul>
-    <li><a class="active" href="index.html">María de Zayas y Sotomayor: Dos novelas</a></li>
-    <li><a href="biografia.html">Biografía</a></li>
-    <li><a href="contexto.html">Contexto</a></li>
-    <li><a href="estudios.html">Estudios de género</a></li>
-    <li><a href="criterios.html">Criterios de edición</a></li>
-    <li><a href="bibliografia.html">Bibliografía</a></li>
+  <ul class="navul">
+    <li class="navli"><a class="active anav" href="index.html">María de Zayas y Sotomayor: Dos novelas</a></li>
+    <li class="navli"><a class="anav" href="biografia.html">Biografía</a></li>
+    <li class="navli"><a class="anav" href="contexto.html">Contexto</a></li>
+    <li class="navli"><a class="anav" href="estudios.html">Estudios de género</a></li>
+    <li class="navli"><a class="anav" href="criterios.html">Criterios de edición</a></li>
+    <li class="navli"><a class="anav" href="bibliografia.html">Bibliografía</a></li>
   </ul>
   <!--NAVBAR-->
   <div class="content">
     <div id="main-div" class="container">
       <div>
         <h1 style="padding-top: 50px; text-align: center">
-          Titulo
+          María de Zayas y Sotomayor: Dos novelas
         </h1>
         <br>
         <h3>Sobre el proyecto</h3>
@@ -114,37 +114,35 @@
       <div class="row">
 
         <div class="column">
-          <img src="resources/images/La burlada.jpg" alt="La burlada"
-              style="width:60%">
+          <img src="resources/images/La burlada.jpg" alt="La burlada" style="width:60%">
         </div>
         <div class="column2">
 
         </div>
         <div class="column1">
-          <img src="resources/images/El prevenido.jpg" alt="El prevenido"
-              style="width:60%">
+          <img src="resources/images/El prevenido.jpg" alt="El prevenido" style="width:60%">
         </div>
       </div>
       <div class="row">
         <div class="column">
-          <a href="" class="button-17">Facsimilar</a>
+          <a href="fac_burlada.html" class="button-17">Facsimilar</a>
         </div>
         <div class="column2">
 
         </div>
         <div class="column1">
-          <a href="" class="button-17">Facsimilar</a>
+          <a href="fac_prevenido.html" class="button-17">Facsimilar</a>
         </div>
       </div>
       <div class="row">
         <div class="column">
-          <a href="" class="button-17">Edición lectura</a>
+          <a href="" class="button-17">Transcripción diplomática</a>
         </div>
         <div class="column2">
 
         </div>
         <div class="column1">
-          <a href="" class="button-17">Edición lectura</a>
+          <a href="" class="button-17">Transcripción diplomática</a>
         </div>
       </div>
       <div class="row">
@@ -158,9 +156,67 @@
           <a href="el_prevenido_enga%C3%B1ado_1637.html" class="button-17">Edición anotada</a>
         </div>
       </div>
+      <div>
+        <hr>
+        <h3>Recomendaciones de lectura</h3>
+        <p class="intro">
+
+          Al realizar el proceso de lectura de la <strong>edición anotada</strong> se le recomienda al lector tener en
+          cuenta las
+          siguientes consideraciones:
+        </p>
+        <ol>
+          <li>Al lado izquierdo de las novelas el número verde, <strong style="color: green;">1</strong> indica el
+            número del párrafo, de la edición
+            anotada, en el que se encuentra.</li>
+          <li>La pleca <strong style="color: goldenrod;">|</strong> amarilla indica el número de la página de la versión
+            facsimilar de la novela, de la que
+            parte el texto de esta edición.</li>
+          <li>El <u style="text-decoration-color:red">subrayado rojo</u>, debajo de algunas partes del texto, indica los
+            cambios que se realizaron en
+            el texto. Lo que se visualiza junto al <strong>reg</strong> es lo que se modificó.</li>
+          <li>El acento circunflejo <strong>^</strong>, indican los lugares donde se eliminaron elementos en el texto.
+            Junto al <strong>sic</strong>
+            se visualiza lo que fue eliminado.</li>
+          <li>El <u style="text-decoration-color:green">subrayado verde</u> , indica las correcciones que se realizaron
+            en el texto.</li>
+          <li>Las notas al texto esta indicadas con un número en azul, por ejemplo <strong
+              style="color: #0d6efd;">[1]</strong>. Al seleccionar el número lo
+            llevará a la nota y si selecciona nuevamente este mismo numero, lo llevará a la sección del texto en donde
+            se
+            encuentra la nota.</li>
+        </ol>
+        </p>
+        <hr>
+      </div>
+
+
     </div>
   </div>
 
+  <!-- FOOTER -->
+  <div class="row">
+    <div style="text-align:center;">
+      <button onclick="copyQuoteMLA()" class="button-2">Citar en MLA</button>
+    </div>
+  </div>
+  
+  <script>
+    function copyQuoteMLA() {
+      let copyText = {
+        text: "Ospina Reyes, María José. \"María De Zayas Y Sotomayor: Dos Novelas\". María De Zayas Y Sotomayor: Dos Novelas, 2021, https://maria-de-zayas-y-sotomayor.github.io/Maria-de-Zayas-y-Sotomayor/."
+      };
+      navigator.clipboard.writeText(copyText.text);
+    }
+  </script>
+  
+  <br>
+  <p style="text-align:center;">
+    María José Ospina Reyes
+    <br>
+    Editado por última vez: 16 de noviembre del 2021
+  </p>
+  <!-- FOOTER -->
 
   <!--bootstrap js bundle-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

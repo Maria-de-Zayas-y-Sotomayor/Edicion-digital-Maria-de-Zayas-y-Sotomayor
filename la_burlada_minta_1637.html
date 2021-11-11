@@ -15,22 +15,23 @@
 
 <body>
         <!--NAVBAR-->
-  <ul>
-        <li><a class="active" href="index.html">María de Zayas y Sotomayor: Dos novelas</a></li>
-        <li><a href="biografia.html">Biografía</a></li>
-        <li><a href="contexto.html">Contexto</a></li>
-        <li><a href="estudios.html">Estudios de género</a></li>
-        <li><a href="criterios.html">Criterios de edición</a></li>
-        <li><a href="bibliografia.html">Bibliografía</a></li>
-      </ul>
-      <!--NAVBAR-->
+        <ul class="navul">
+                <li class="navli"><a class="active anav" href="index.html">María de Zayas y Sotomayor: Dos novelas</a>
+                </li>
+                <li class="navli"><a class="anav" href="biografia.html">Biografía</a></li>
+                <li class="navli"><a class="anav" href="contexto.html">Contexto</a></li>
+                <li class="navli"><a class="anav" href="estudios.html">Estudios de género</a></li>
+                <li class="navli"><a class="anav" href="criterios.html">Criterios de edición</a></li>
+                <li class="navli"><a class="anav" href="bibliografia.html">Bibliografía</a></li>
+        </ul>
+        <!--NAVBAR-->
         <div id="main-div" class="container">
                 <div>
                         <h1 style="padding-top: 50px">La burlada Aminta y venganza del honor (1637)</h1>
                         <h4>María de Zayas y Sotomayor (1590–1647/1661)</h2>
-                                
+
                                 <hr>
-                                
+
                                 <p xmlns="" class="p-in-teiheader">
 
                                         Texto codificado a partir de la edición:
@@ -68,7 +69,7 @@
                 </div>
 
                 <hr>
-                
+
 
                 <div xmlns="" id="">
                         <h2>
@@ -3570,9 +3571,9 @@
 
 
 
-<br>
+                <br>
                 <div xmlns="" id="">
-                        <h2 >
+                        <h2>
 
                                 <head xmlns="http://www.tei-c.org/ns/1.0" ana="level 4">
                                         <lb n="3"></lb>NOCHE SEGVNDA
@@ -3580,7 +3581,7 @@
                         </h2>
 
                 </div>
-<br>
+                <br>
 
 
                 <p xmlns="">
@@ -3849,6 +3850,29 @@
                         </div>
                 </div>
         </div>
+        <!-- FOOTER -->
+        <div class="row">
+                <div style="text-align:center;">
+                        <button onclick="copyQuoteMLA()" class="button-2">Citar en MLA</button>
+                </div>
+        </div>
+
+        <script>
+                function copyQuoteMLA() {
+                        let copyText = {
+                                text: "Ospina Reyes, María José. \"María De Zayas Y Sotomayor: Dos Novelas\". María De Zayas Y Sotomayor: Dos Novelas, 2021, https://maria-de-zayas-y-sotomayor.github.io/Maria-de-Zayas-y-Sotomayor/."
+                        };
+                        navigator.clipboard.writeText(copyText.text);
+                }
+        </script>
+
+        <br>
+        <p style="text-align:center;">
+                María José Ospina Reyes
+                <br>
+                Editado por última vez: 16 de noviembre del 2021
+        </p>
+        <!-- FOOTER -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
                 crossorigin="anonymous"></script>

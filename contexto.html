@@ -19,13 +19,13 @@
 
 <body>
   <!--NAVBAR-->
-  <ul>
-    <li><a class="active" href="index.html">María de Zayas y Sotomayor: Dos novelas</a></li>
-    <li><a href="biografia.html">Biografía</a></li>
-    <li><a href="contexto.html">Contexto</a></li>
-    <li><a href="estudios.html">Estudios de género</a></li>
-    <li><a href="criterios.html">Criterios de edición</a></li>
-    <li><a href="bibliografia.html">Bibliografía</a></li>
+  <ul class="navul">
+    <li class="navli"><a class="active anav" href="index.html">María de Zayas y Sotomayor: Dos novelas</a></li>
+    <li class="navli"><a class="anav" href="biografia.html">Biografía</a></li>
+    <li class="navli"><a class="anav" href="contexto.html">Contexto</a></li>
+    <li class="navli"><a class="anav" href="estudios.html">Estudios de género</a></li>
+    <li class="navli"><a class="anav" href="criterios.html">Criterios de edición</a></li>
+    <li class="navli"><a class="anav" href="bibliografia.html">Bibliografía</a></li>
   </ul>
   <!--NAVBAR-->
   <div id="main-div" class="container">
@@ -33,42 +33,33 @@
     <h3 style="padding-top: 50px;text-align: center">Contexto histórico</h3>
     <br>
     <p class="intro">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor neque, interdum eget nulla a, vehicula
-      dictum
-      tellus. Sed aliquam nec felis in imperdiet. Donec at tempor massa, non suscipit lectus. Class aptent taciti
-      sociosqu
-      ad litora torquent per conubia nostra, per inceptos himenaeos. In sagittis ultrices ullamcorper. Interdum et
-      malesuada fames ac ante ipsum primis in faucibus. Quisque sit amet turpis orci.
+      El Siglo de Oro español abarcó desde los primeros años del XVI hasta mediados del XVII. Fue el periodo en el cual
+      España sobresalió a nivel mundial debido al poder político que adquirió, durante los reinados de la dinastía de
+      Austrias. Aunque, también abarca, la decadencia que se dio gracias a las crisis políticas, económicas y sociales,
+      que fueron acompañadas del apogeo cultural que se vio reflejado en la producción artística, literaria e
+      investigativa, en cuanto a los estudios científicos.
       <br>
       <br>
-      Mauris rhoncus, ex eu pulvinar imperdiet, ipsum tellus faucibus odio, sed imperdiet est lectus efficitur ex.
-      Donec
-      nec diam dolor. Vivamus sit amet porttitor leo. Praesent porta nunc turpis, non ornare quam laoreet in. Mauris
-      vel
-      urna ex. Cras sed magna tristique libero facilisis scelerisque. Vivamus ligula urna, blandit vel erat quis,
-      aliquet
-      facilisis diam. Proin sollicitudin et sapien in commodo. Nam mattis tellus elit, ac porttitor quam pretium
-      pharetra.
-      Donec eu lectus cursus, maximus dolor sed, ultricies leo. Interdum et malesuada fames ac ante ipsum primis in
-      faucibus. Phasellus tincidunt placerat cursus. Curabitur pellentesque pulvinar ante. Pellentesque id nulla
-      maximus,
-      vestibulum velit nec, auctor odio. Curabitur posuere erat nunc, eget aliquet tortor cursus at. Ut eu maximus
-      ipsum,
-      feugiat tristique eros.
-<br>
-<br>
-      Donec egestas, quam in efficitur tempor, dui ex mollis urna, ac hendrerit diam nulla et diam. In fringilla erat
-      eu
-      libero sagittis, in fermentum quam sollicitudin. Nunc id sem sed risus convallis aliquet sit amet eu augue. Sed
-      aliquam consequat tortor id molestie. Aenean aliquet pellentesque ullamcorper. Curabitur malesuada mi at enim
-      commodo porta. Vivamus augue nisl, pharetra et fringilla sed, fermentum sit amet enim. Vestibulum nec vehicula
-      mi.
-      Sed dictum non ante in varius. Vivamus porttitor, enim non vestibulum volutpat, eros nisl aliquet neque, ut
-      maximus
-      nisl lectus at massa. Pellentesque fringilla mattis mollis. Donec mi lacus, vehicula ut volutpat nec, rhoncus
-      consequat elit. Suspendisse quis urna tellus.
-<br>
-<hr>
+      La expansión territorial el imperio llegó a abarcar regiones del norte de África, Sicilia, el sur de Italia, la
+      península Ibérica, las islas Filipinas y gran parte del continente americano. Del cual fueron extraídas grandes
+      cantidades de metales preciosos que, en un principio, favorecieron el surgimiento de mecenas en la aristocracia y,
+      posteriormente, beneficiar al alto clero español.
+      <br>
+      <br>
+      Debido a que los miembros de la dinastía se interesaban por las artes fueron mecenas y coleccionistas de grandes
+      obras que generaron un espacio favorable para el desarrollo de la literatura y el arte. La relevancia y la
+      cantidad de producción que se dio en estas áreas afecto la cultura europea, pues no se trata de un solo estilo
+      artístico - abarca al Renacimiento y al Barroco - ni de un fenómeno que se desarrollaba únicamente en la corte
+      real de Madrid. Esto se expandió por ciudades medianas como lo son Valencia, Zaragoza, Sevilla y Toledo.
+      <br>
+      <br>
+      Las tendencias artísticas variaban desde las realistas y las renacentistas que rescataban temas cotidianos y
+      vulgares al emplear un lenguaje y personajes inspirados en lo popular, en lo relacionado con el hombre y el mundo,
+      hasta las barrocas que empleaban una terminología más culta, elevada e intelectual. Estas características esta
+      presentes en las pinturas de la época, en las cuales es posible vislumbrar elementos del renacimiento tardío.
+      A continuación, encontrará información complementaria acerca de este periodo temporal.
+
+      <hr>
     </p>
 
   </div>
@@ -80,7 +71,29 @@
   <img class="center-fit" src="resources/context/5.png">
   <img class="center-fit" src="resources/context/6.png">
   <img class="center-fit" src="resources/context/Mapa dinastia de Habsburgo.png">
+  <!-- FOOTER -->
+  <div class="row">
+    <div style="text-align:center;">
+      <button onclick="copyQuoteMLA()" class="button-2">Citar en MLA</button>
+    </div>
+  </div>
 
+  <script>
+    function copyQuoteMLA() {
+      let copyText = {
+        text: "Ospina Reyes, María José. \"María De Zayas Y Sotomayor: Dos Novelas\". María De Zayas Y Sotomayor: Dos Novelas, 2021, https://maria-de-zayas-y-sotomayor.github.io/Maria-de-Zayas-y-Sotomayor/."
+      };
+      navigator.clipboard.writeText(copyText.text);
+    }
+  </script>
+
+  <br>
+  <p style="text-align:center;">
+    María José Ospina Reyes
+    <br>
+    Editado por última vez: 16 de noviembre del 2021
+  </p>
+  <!-- FOOTER -->
 
 
   <!--bootstrap js bundle-->

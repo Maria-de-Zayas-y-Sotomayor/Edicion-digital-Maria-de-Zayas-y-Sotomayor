@@ -18,16 +18,16 @@
 
 
 <body>
-<!--NAVBAR-->
-<ul>
-  <li><a class="active" href="index.html">María de Zayas y Sotomayor: Dos novelas</a></li>
-  <li><a href="biografia.html">Biografía</a></li>
-  <li><a href="contexto.html">Contexto</a></li>
-  <li><a href="estudios.html">Estudios de género</a></li>
-  <li><a href="criterios.html">Criterios de edición</a></li>
-  <li><a href="bibliografia.html">Bibliografía</a></li>
-</ul>
-<!--NAVBAR-->
+  <!--NAVBAR-->
+  <ul class="navul">
+    <li class="navli"><a class="active anav" href="index.html">María de Zayas y Sotomayor: Dos novelas</a></li>
+    <li class="navli"><a class="anav" href="biografia.html">Biografía</a></li>
+    <li class="navli"><a class="anav" href="contexto.html">Contexto</a></li>
+    <li class="navli"><a class="anav" href="estudios.html">Estudios de género</a></li>
+    <li class="navli"><a class="anav" href="criterios.html">Criterios de edición</a></li>
+    <li class="navli"><a class="anav" href="bibliografia.html">Bibliografía</a></li>
+  </ul>
+  <!--NAVBAR-->
   <div id="main-div" class="container">
     <div>
 
@@ -39,7 +39,29 @@
       </div>
     </div>
   </div>
+  <!-- FOOTER -->
+  <div class="row">
+    <div style="text-align:center;">
+      <button onclick="copyQuoteMLA()" class="button-2">Citar en MLA</button>
+    </div>
+  </div>
 
+  <script>
+    function copyQuoteMLA() {
+      let copyText = {
+        text: "Ospina Reyes, María José. \"María De Zayas Y Sotomayor: Dos Novelas\". María De Zayas Y Sotomayor: Dos Novelas, 2021, https://maria-de-zayas-y-sotomayor.github.io/Maria-de-Zayas-y-Sotomayor/."
+      };
+      navigator.clipboard.writeText(copyText.text);
+    }
+  </script>
+
+  <br>
+  <p style="text-align:center;">
+    María José Ospina Reyes
+    <br>
+    Editado por última vez: 16 de noviembre del 2021
+  </p>
+  <!-- FOOTER -->
 </body>
 
 </html>
