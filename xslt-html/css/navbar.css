@@ -1,4 +1,4 @@
-
+/* OLD NAVBAR
 .navul {  
     list-style-type: none;  
     
@@ -29,7 +29,7 @@
   color: #C9ADA7;  
   }  
   li nav, a:hover , .dropdown:hover .dropbtn {  
-    background-color: 9A8C98;  
+    background-color: #9A8C98;  
     color: white;  
   }  
     
@@ -56,7 +56,7 @@
     
   .dropdown:hover .dropdown-content {  
     display: block;  
-  }  
+  }  */
 /* CSS */
 .button-2 {
   background-color: rgba(51, 51, 51, 0.05);
@@ -80,3 +80,67 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #22223B;
+  font-family: "Helvetica Neue",Helvetica,Arial;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #F2E9E4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Helvetica Neue",Helvetica,Arial;
+  border-right: 1px solid #F2E9E4;  
+}
+
+.topnav a:hover {
+  background-color: #9A8C98;
+  color: white;
+  font-family: "Helvetica Neue",Helvetica,Arial;
+}
+
+.topnav a.active {
+  background-color: #22223B;
+  color: #C9ADA7;
+  font-family: "Helvetica Neue",Helvetica,Arial;
+}
+
+.topnav .icon {
+  display: none;
+  font-family: "Helvetica Neue",Helvetica,Arial;
+}
+
+@media screen and (max-width: 1040px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* navbar responsive pero no se ve el icono cuando se oculta la barra*/
+
